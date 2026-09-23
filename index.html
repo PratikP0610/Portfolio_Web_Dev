@@ -1,0 +1,590 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <!-- Viewport settings for responsive design on mobile and tablet devices -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Personal portfolio of Pratik Pardeshi - Developer, AI enthusiast and engineering student.">
+    <title>Pratik Pardeshi | Portfolio</title>
+    
+    <!-- Google Fonts for clean, modern student typography -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Outfit:wght@500;600;700;800&display=swap" rel="stylesheet">
+    
+    <!-- Main Stylesheet -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- ============================================================ -->
+    <!-- Navigation Bar -->
+    <!-- ============================================================ -->
+    <header class="header">
+        <div class="nav-container">
+            <!-- Logo -->
+            <a href="#home" class="logo">
+                Pratik<span class="logo-accent">.</span>
+            </a>
+
+            <!-- Navigation Links -->
+            <nav class="nav-menu">
+                <ul class="nav-list">
+                    <li class="nav-item"><a href="#home" class="nav-link active">Home</a></li>
+                    <li class="nav-item"><a href="#about" class="nav-link">About</a></li>
+                    <li class="nav-item"><a href="#skills" class="nav-link">Skills</a></li>
+                    <li class="nav-item"><a href="#education" class="nav-link">Education</a></li>
+                    <li class="nav-item"><a href="#projects" class="nav-link">Projects</a></li>
+                    <li class="nav-item"><a href="#contact" class="nav-link">Contact</a></li>
+                </ul>
+            </nav>
+
+            <!-- Download CV Button in Header -->
+            <div class="nav-action">
+                <a href="assets/Pratik-Pardeshi-CV.pdf" class="btn btn-primary" download>
+                    Download CV
+                    <span class="btn-arrow">&rarr;</span>
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <main id="main-content">
+        <!-- ============================================================ -->
+        <!-- Hero Section -->
+        <!-- ============================================================ -->
+        <section id="home" class="hero-section">
+            <div class="container hero-container">
+                
+                <!-- Introduction / Text Content -->
+                <div class="hero-content">
+                    <div class="hero-intro-badge">
+                        <span class="badge-dot"></span>
+                        <p class="hero-greeting">Hi! I'm</p>
+                    </div>
+
+                    <h1 class="hero-title">
+                        Pratik <span class="text-highlight">Pardeshi</span>
+                    </h1>
+
+                    <p class="hero-description">
+                        Developer, AI enthusiast and engineering enthusiast building practical technology and intelligent systems.
+                    </p>
+
+                    <!-- Hero Call to Action Buttons -->
+                    <div class="hero-buttons">
+                        <!-- Download CV Button -->
+                        <a href="assets/Pratik-Pardeshi-CV.pdf" class="btn btn-primary" download>
+                            Download CV
+                            <span class="btn-arrow">&rarr;</span>
+                        </a>
+
+                        <!-- Contact Button -->
+                        <a href="#contact" class="btn btn-outline">
+                            Contact Me
+                        </a>
+                    </div>
+
+                    <!-- Social / Contact Links -->
+                    <div class="hero-socials">
+                        <span class="socials-label">Connect:</span>
+                        <div class="social-links">
+                            <a href="https://github.com/PratikP0610" target="_blank" rel="noopener noreferrer" class="social-link" title="GitHub">
+                                GitHub
+                            </a>
+
+                            <a href="https://www.linkedin.com/in/pratik-pardeshi-3b2945426/" target="_blank" rel="noopener noreferrer" class="social-link" title="LinkedIn">
+                                LinkedIn
+                            </a>
+
+                            <a href="mailto:pardeshipratik06@gmail.com" class="social-link" title="Email">
+                                Email
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Hero Visual / Profile Image Area -->
+                <div class="hero-visual">
+                    
+                    <!-- Decorative Curving Dashed Line inspired by reference image -->
+                    <div class="decorative-curve" aria-hidden="true">
+                        <svg viewBox="0 0 200 120" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M10,100 C50,110 70,30 180,20" stroke="#184E4B" stroke-width="2" stroke-dasharray="6 6" stroke-linecap="round"/>
+                            <path d="M172,15 L182,20 L175,28" stroke="#184E4B" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </div>
+
+                    <!-- Profile Image Container -->
+                    <!-- The photo stays centered and cropped naturally inside this circular frame -->
+                    <div class="profile-frame">
+                        <div class="profile-circle-backdrop"></div>
+                        <!-- Profile Image -->
+                        <img src="images/pratik-photo.jpg" alt="Pratik Pardeshi" class="profile-image">
+                    </div>
+
+                    <!-- Floating Student Badges inspired by the reference layout -->
+                    <div class="floating-badge badge-top-right">
+                        <span class="badge-icon">🎓</span>
+                        <div class="badge-text">
+                            <strong>BITS Pilani</strong>
+                            <small>BS in Computer Science</small>
+                        </div>
+                    </div>
+
+                    <div class="floating-badge badge-bottom-left">
+                        <span class="badge-icon">⚡</span>
+                        <div class="badge-text">
+                            <strong>Tech & AI</strong>
+                            <small>Builder & Learner</small>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+        </section>
+
+        <!-- ============================================================ -->
+        <!-- About Section -->
+        <!-- ============================================================ -->
+        <section id="about" class="about-section">
+            <div class="container">
+                <div class="section-header">
+                    <p class="section-subtitle">Get To Know Me</p>
+                    <h2 class="section-title">About Me</h2>
+                    <div class="section-divider"></div>
+                </div>
+
+                <div class="about-grid">
+                    <!-- About Text Introduction -->
+                    <div class="about-card about-intro-card">
+                        <h3 class="about-card-title">Pratik Pardeshi</h3>
+                        <p class="about-bio">
+                            I am a student interested in technology, engineering, artificial intelligence and motorsport. I enjoy building things, learning how systems work and turning ideas into practical projects.
+                        </p>
+                        <p class="about-subtext">
+                            I am continuously exploring how software and intelligent algorithms can interface with real-world engineering systems to solve problems.
+                        </p>
+                    </div>
+
+                    <!-- Education Overview Cards -->
+                    <div class="about-card about-highlight-card">
+                        <div class="highlight-item">
+                            <div class="highlight-header">
+                                <span class="highlight-tag">Current Academic Track</span>
+                                <h4 class="highlight-institution">BK Shinde Junior College</h4>
+                            </div>
+                            <p class="highlight-degree">12th Standard — Maharashtra HSC</p>
+                            <p class="highlight-subjects-label"><strong>Subjects:</strong></p>
+                            <ul class="subjects-list">
+                                <li>Physics</li>
+                                <li>Chemistry</li>
+                                <li>Mathematics</li>
+                                <li>Biology</li>
+                                <li>English</li>
+                                <li>Information Technology</li>
+                            </ul>
+                        </div>
+
+                        <div class="highlight-divider"></div>
+
+                        <div class="highlight-item">
+                            <div class="highlight-header">
+                                <span class="highlight-tag">Higher Education</span>
+                                <h4 class="highlight-institution">BITS Pilani</h4>
+                            </div>
+                            <p class="highlight-degree">BS in Computer Science</p>
+                            <p class="highlight-description">Pursuing foundational and applied concepts in computing, software systems, and technology.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ============================================================ -->
+        <!-- Skills Section -->
+        <!-- ============================================================ -->
+        <section id="skills" class="skills-section">
+            <div class="container">
+                <div class="section-header">
+                    <p class="section-subtitle">What I Work With & Learn</p>
+                    <h2 class="section-title">Skills & Interests</h2>
+                    <div class="section-divider"></div>
+                    <p class="section-note">Technologies, tools, and engineering areas I work with or am actively learning.</p>
+                </div>
+
+                <!-- Skills Grid Container -->
+                <div class="skills-grid">
+                    
+                    <!-- Skill Card: Programming -->
+                    <div class="skill-card">
+                        <div class="skill-card-icon">💻</div>
+                        <h3 class="skill-card-title">Programming</h3>
+                        <p class="skill-card-description">Core languages for problem solving, algorithmic thinking, and application logic.</p>
+                        <ul class="skill-tags">
+                            <li class="skill-tag">Python</li>
+                            <li class="skill-tag">Java</li>
+                            <li class="skill-tag">HTML</li>
+                            <li class="skill-tag">CSS</li>
+                            <li class="skill-tag">JavaScript</li>
+                        </ul>
+                    </div>
+
+                    <!-- Skill Card: AI & Technology -->
+                    <div class="skill-card">
+                        <div class="skill-card-icon">🧠</div>
+                        <h3 class="skill-card-title">AI / Technology</h3>
+                        <p class="skill-card-description">Exploring intelligent algorithms, local machine learning models, and smart systems.</p>
+                        <ul class="skill-tags">
+                            <li class="skill-tag">Artificial Intelligence</li>
+                            <li class="skill-tag">Machine Learning</li>
+                            <li class="skill-tag">Local AI Systems</li>
+                            <li class="skill-tag">API Integration</li>
+                        </ul>
+                    </div>
+
+                    <!-- Skill Card: Web Development -->
+                    <div class="skill-card">
+                        <div class="skill-card-icon">🌐</div>
+                        <h3 class="skill-card-title">Web</h3>
+                        <p class="skill-card-description">Building responsive, accessible, and structured web interfaces.</p>
+                        <ul class="skill-tags">
+                            <li class="skill-tag">HTML</li>
+                            <li class="skill-tag">CSS</li>
+                            <li class="skill-tag">JavaScript</li>
+                        </ul>
+                    </div>
+
+                    <!-- Skill Card: Tools -->
+                    <div class="skill-card">
+                        <div class="skill-card-icon">🛠️</div>
+                        <h3 class="skill-card-title">Tools</h3>
+                        <p class="skill-card-description">Essential developer tools for version control, workflows, and environments.</p>
+                        <ul class="skill-tags">
+                            <li class="skill-tag">Git</li>
+                            <li class="skill-tag">GitHub</li>
+                            <li class="skill-tag">Docker</li>
+                            <li class="skill-tag">VS Code</li>
+                        </ul>
+                    </div>
+
+                    <!-- Skill Card: Engineering & Interests -->
+                    <div class="skill-card skill-card-wide">
+                        <div class="skill-card-icon">🏎️</div>
+                        <h3 class="skill-card-title">Engineering / Interests</h3>
+                        <p class="skill-card-description">Fields that inspire my engineering mindset, mechanics, and curiosity.</p>
+                        <ul class="skill-tags">
+                            <li class="skill-tag">Automotive</li>
+                            <li class="skill-tag">Motorsport</li>
+                            <li class="skill-tag">Engineering</li>
+                            <li class="skill-tag">Aerospace</li>
+                        </ul>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- ============================================================ -->
+        <!-- Education Section -->
+        <!-- ============================================================ -->
+        <section id="education" class="education-section">
+            <div class="container">
+                <div class="section-header">
+                    <p class="section-subtitle">Academic Background</p>
+                    <h2 class="section-title">Education</h2>
+                    <div class="section-divider"></div>
+                </div>
+
+                <div class="education-grid">
+                    
+                    <!-- Education Card 1 -->
+                    <div class="education-card">
+                        <div class="education-badge">Junior College</div>
+                        <h3 class="education-institution">BK Shinde Junior College</h3>
+                        <h4 class="education-program">Maharashtra HSC — 12th Standard</h4>
+                        <div class="education-details">
+                            <p class="education-label"><strong>Subjects Studied:</strong></p>
+                            <p class="education-subjects-text">Physics, Chemistry, Mathematics, Biology, English, Information Technology (PCMB + English + IT)</p>
+                        </div>
+                    </div>
+
+                    <!-- Education Card 2 -->
+                    <div class="education-card">
+                        <div class="education-badge">University Degree</div>
+                        <h3 class="education-institution">BITS Pilani</h3>
+                        <h4 class="education-program">BS in Computer Science</h4>
+                        <div class="education-details">
+                            <p class="education-label"><strong>Focus:</strong></p>
+                            <p class="education-subjects-text">Foundational computer science, data structures, algorithms, and software engineering.</p>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- ============================================================ -->
+        <!-- Projects Section (Intentionally Placeholder Only) -->
+        <!-- ============================================================ -->
+        <section id="projects" class="projects-section">
+            <div class="container">
+                <div class="section-header">
+                    <p class="section-subtitle">Portfolio Work</p>
+                    <h2 class="section-title">Projects</h2>
+                    <div class="section-divider"></div>
+                </div>
+
+                <!-- Projects Cards Grid -->
+                <div class="projects-grid">
+                    
+                    <!-- Project Card 1: Assignment2.html -->
+                    <article class="project-card">
+                        <div class="project-preview">
+                            <div class="browser-bar">
+                                <span class="browser-dot dot-red"></span>
+                                <span class="browser-dot dot-yellow"></span>
+                                <span class="browser-dot dot-green"></span>
+                                <span class="browser-filename">Assignment2.html</span>
+                            </div>
+                            <a href="Projects/Assignment2.html" target="_blank" rel="noopener noreferrer" class="project-img-link" title="Open Assignment2.html">
+                                <img src="images/Assignment2.png" alt="Screenshot of Assignment2.html (Flexbox Quest)" class="project-screenshot" loading="lazy">
+                                <div class="project-overlay">
+                                    <span class="overlay-text">Live Preview ↗</span>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="project-content">
+                            <div class="project-header">
+                                <span class="project-badge">Assignment2.html</span>
+                                <h3 class="project-title">Flexbox Quest</h3>
+                            </div>
+                            <p class="project-description">
+                                An interactive gamified quest UI showcasing CSS Flexbox layouts, player controls, inventory slots, adventure platforms, and responsive game panels.
+                            </p>
+                            <div class="project-tech-tags">
+                                <span class="tech-tag">HTML5</span>
+                                <span class="tech-tag">CSS Flexbox</span>
+                                <span class="tech-tag">Game UI</span>
+                                <span class="tech-tag">Responsive</span>
+                            </div>
+                            <div class="project-footer">
+                                <a href="Projects/Assignment2.html" target="_blank" rel="noopener noreferrer" class="btn btn-outline btn-project">
+                                    View Project
+                                    <span class="btn-arrow">&rarr;</span>
+                                </a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Project Card 2: shoppingweb.html -->
+                    <article class="project-card">
+                        <div class="project-preview">
+                            <div class="browser-bar">
+                                <span class="browser-dot dot-red"></span>
+                                <span class="browser-dot dot-yellow"></span>
+                                <span class="browser-dot dot-green"></span>
+                                <span class="browser-filename">shoppingweb.html</span>
+                            </div>
+                            <a href="Projects/shoppingweb.html" target="_blank" rel="noopener noreferrer" class="project-img-link" title="Open shoppingweb.html">
+                                <img src="images/shoppingweb.png" alt="Screenshot of shoppingweb.html (ShopEasy)" class="project-screenshot" loading="lazy">
+                                <div class="project-overlay">
+                                    <span class="overlay-text">Live Preview ↗</span>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="project-content">
+                            <div class="project-header">
+                                <span class="project-badge">shoppingweb.html</span>
+                                <h3 class="project-title">ShopEasy E-Commerce</h3>
+                            </div>
+                            <p class="project-description">
+                                A modern e-commerce storefront layout featuring deals carousels, category navigation, top search bar, product cards, and responsive shopping grids.
+                            </p>
+                            <div class="project-tech-tags">
+                                <span class="tech-tag">HTML5</span>
+                                <span class="tech-tag">CSS3</span>
+                                <span class="tech-tag">E-Commerce UI</span>
+                                <span class="tech-tag">Grid Layout</span>
+                            </div>
+                            <div class="project-footer">
+                                <a href="Projects/shoppingweb.html" target="_blank" rel="noopener noreferrer" class="btn btn-outline btn-project">
+                                    View Project
+                                    <span class="btn-arrow">&rarr;</span>
+                                </a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Project Card 3: assignment1.html -->
+                    <article class="project-card">
+                        <div class="project-preview">
+                            <div class="browser-bar">
+                                <span class="browser-dot dot-red"></span>
+                                <span class="browser-dot dot-yellow"></span>
+                                <span class="browser-dot dot-green"></span>
+                                <span class="browser-filename">assignment1.html</span>
+                            </div>
+                            <a href="Projects/assignment1.html" target="_blank" rel="noopener noreferrer" class="project-img-link" title="Open assignment1.html">
+                                <img src="images/assignment1.png" alt="Screenshot of assignment1.html (Student Portal)" class="project-screenshot" loading="lazy">
+                                <div class="project-overlay">
+                                    <span class="overlay-text">Live Preview ↗</span>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="project-content">
+                            <div class="project-header">
+                                <span class="project-badge">assignment1.html</span>
+                                <h3 class="project-title">Student Portal</h3>
+                            </div>
+                            <p class="project-description">
+                                A structured student management portal featuring clean student profile cards, academic timetables, course registration forms, and semantic tables.
+                            </p>
+                            <div class="project-tech-tags">
+                                <span class="tech-tag">HTML5</span>
+                                <span class="tech-tag">CSS</span>
+                                <span class="tech-tag">Semantic HTML</span>
+                                <span class="tech-tag">Forms & Tables</span>
+                            </div>
+                            <div class="project-footer">
+                                <a href="Projects/assignment1.html" target="_blank" rel="noopener noreferrer" class="btn btn-outline btn-project">
+                                    View Project
+                                    <span class="btn-arrow">&rarr;</span>
+                                </a>
+                            </div>
+                        </div>
+                    </article>
+
+                </div>
+
+            </div>
+        </section>
+
+        <!-- ============================================================ -->
+        <!-- Contact Section -->
+        <!-- ============================================================ -->
+        <section id="contact" class="contact-section">
+            <div class="container">
+                <div class="section-header">
+                    <p class="section-subtitle">Get In Touch</p>
+                    <h2 class="section-title">Contact</h2>
+                    <div class="section-divider"></div>
+                    <p class="section-note">Feel free to reach out for collaborations, questions, or discussions.</p>
+                </div>
+
+                <div class="contact-layout">
+                    
+                    <!-- Contact Details Info Box -->
+                    <div class="contact-info">
+                        <h3 class="contact-info-title">Let's Connect</h3>
+                        <p class="contact-info-desc">
+                            Have an idea, project, or question? You can reach out directly using the details below or through the contact form.
+                        </p>
+
+                        <div class="contact-details-list">
+                            <!-- Email Item -->
+                            <div class="contact-item">
+                                <span class="contact-item-icon">✉️</span>
+                                <div class="contact-item-text">
+                                    <span class="contact-item-label">Email</span>
+                                    <a href="mailto:pardeshipratik06@gmail.com" class="contact-item-value">pardeshipratik06@gmail.com</a>
+                                </div>
+                            </div>
+
+                            <!-- Phone Item -->
+                            <div class="contact-item">
+                                <span class="contact-item-icon">📞</span>
+                                <div class="contact-item-text">
+                                    <span class="contact-item-label">Phone</span>
+                                    <a href="tel:+918446039814" class="contact-item-value">+91 8446039814</a>
+                                </div>
+                            </div>
+
+                            <!-- Location Item -->
+                            <div class="contact-item">
+                                <span class="contact-item-icon">📍</span>
+                                <div class="contact-item-text">
+                                    <span class="contact-item-label">Location</span>
+                                    <span class="contact-item-value">India</span>
+                                </div>
+                            </div>
+
+                            <!-- GitHub Item -->
+                            <div class="contact-item">
+                                <span class="contact-item-icon">💻</span>
+                                <div class="contact-item-text">
+                                    <span class="contact-item-label">GitHub</span>
+                                    <a href="https://github.com/PratikP0610" target="_blank" rel="noopener noreferrer" class="contact-item-value">github.com/PratikP0610</a>
+                                </div>
+                            </div>
+
+                            <!-- LinkedIn Item -->
+                            <div class="contact-item">
+                                <span class="contact-item-icon">🔗</span>
+                                <div class="contact-item-text">
+                                    <span class="contact-item-label">LinkedIn</span>
+                                    <a href="https://www.linkedin.com/in/pratik-pardeshi-3b2945426/" target="_blank" rel="noopener noreferrer" class="contact-item-value">linkedin.com/in/pratik-pardeshi</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Contact Form -->
+                    <div class="contact-form-card">
+                        <h3 class="contact-form-title">Send a Message</h3>
+                        
+                        <!-- Standard HTML Form without JavaScript or backend dependencies -->
+                        <form action="#" method="post" class="contact-form">
+                            <!-- Name Field -->
+                            <div class="form-group">
+                                <label for="name" class="form-label">Name</label>
+                                <input type="text" id="name" name="name" class="form-input" placeholder="Your full name" required>
+                            </div>
+
+                            <!-- Email Field -->
+                            <div class="form-group">
+                                <label for="email" class="form-label">Email</label>
+                                <input type="email" id="email" name="email" class="form-input" placeholder="yourname@example.com" required>
+                            </div>
+
+                            <!-- Message Field -->
+                            <div class="form-group">
+                                <label for="message" class="form-label">Message</label>
+                                <textarea id="message" name="message" rows="5" class="form-textarea" placeholder="Write your message here..." required></textarea>
+                            </div>
+
+                            <!-- Submit Button -->
+                            <button type="submit" class="btn btn-primary btn-submit">
+                                Send Message
+                                <span class="btn-arrow">&rarr;</span>
+                            </button>
+                        </form>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- ============================================================ -->
+    <!-- Footer -->
+    <!-- ============================================================ -->
+    <footer class="footer">
+        <div class="container footer-container">
+            <!-- Footer Copyright -->
+            <p class="footer-copy">
+                &copy; 2026 Pratik Pardeshi. All rights reserved.
+            </p>
+
+            <!-- Footer Links -->
+            <div class="footer-links">
+                <a href="https://github.com/PratikP0610" target="_blank" rel="noopener noreferrer" class="footer-link">GitHub</a>
+                <a href="https://www.linkedin.com/in/pratik-pardeshi-3b2945426/" target="_blank" rel="noopener noreferrer" class="footer-link">LinkedIn</a>
+                <a href="mailto:pardeshipratik06@gmail.com" class="footer-link">Email</a>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>

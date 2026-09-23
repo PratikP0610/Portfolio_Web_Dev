@@ -1,0 +1,9 @@
+# macOS system files
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# Editor & temporary files
+*.swp
+*~
+*.tmp
