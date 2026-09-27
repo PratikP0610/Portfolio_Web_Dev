@@ -1,41 +1,29 @@
-/* ============================================================
-   PERSONAL PORTFOLIO STYLESHEET
-   Student: Pratik Pardeshi
-   Technology: Pure HTML5 & CSS3
-   ============================================================ */
-
-/* ============================================================
-   CSS Reset & Variables (Colors, Fonts, Spacing)
-   ============================================================ */
+/* Variables and color palette */
 :root {
-    /* Color Palette */
-    --color-bg: #FAF7F2;               /* Warm off-white / cream background */
-    --color-bg-card: #FFFFFF;          /* Pure white card surface */
-    --color-bg-subtle: #F3ECE1;        /* Subtle warm container tint */
-    --color-primary: #184E4B;          /* Deep teal primary color */
-    --color-primary-dark: #113A38;     /* Darker teal for pressed states */
-    --color-primary-light: #2A6662;    /* Lighter teal for borders/subtle text */
-    --color-accent: #E5A93C;           /* Golden yellow accent */
-    --color-accent-hover: #F0B64D;     /* Golden yellow hover state */
-    --color-text-main: #1A3331;        /* Dark teal / dark neutral for main text */
-    --color-text-muted: #58706E;       /* Muted teal-grey for descriptions */
-    --color-border: #E8E2D8;           /* Subtle warm border color */
+    --color-bg: #FAF7F2;
+    --color-bg-card: #FFFFFF;
+    --color-bg-subtle: #F3ECE1;
+    --color-primary: #184E4B;
+    --color-primary-dark: #113A38;
+    --color-primary-light: #2A6662;
+    --color-accent: #E5A93C;
+    --color-accent-hover: #F0B64D;
+    --color-text-main: #1A3331;
+    --color-text-muted: #58706E;
+    --color-border: #E8E2D8;
 
-    /* Typography */
     --font-heading: 'Outfit', sans-serif;
     --font-body: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
 
-    /* Shadows */
     --shadow-sm: 0 2px 8px rgba(24, 78, 75, 0.06);
     --shadow-md: 0 8px 24px rgba(24, 78, 75, 0.08);
     --shadow-lg: 0 16px 36px rgba(24, 78, 75, 0.12);
 
-    /* Transitions */
     --transition-fast: 0.2s ease;
     --transition-normal: 0.3s ease;
 }
 
-/* Base Box Model setup */
+/* Base styles */
 *, *::before, *::after {
     box-sizing: border-box;
     margin: 0;
@@ -52,10 +40,9 @@ body {
     color: var(--color-text-main);
     font-family: var(--font-body);
     line-height: 1.6;
-    overflow-x: hidden; /* Prevents unwanted horizontal scrolling */
+    overflow-x: hidden;
 }
 
-/* Container Utility for centered max-width layouts */
 .container {
     width: 100%;
     max-width: 1140px;
@@ -65,7 +52,6 @@ body {
     padding-right: 24px;
 }
 
-/* Headings base styling */
 h1, h2, h3, h4, h5, h6 {
     font-family: var(--font-heading);
     color: var(--color-primary);
@@ -87,9 +73,7 @@ img {
     display: block;
 }
 
-/* ============================================================
-   Section Headers (Common styling across sections)
-   ============================================================ */
+/* Section headers */
 .section-header {
     text-align: center;
     margin-bottom: 48px;
@@ -125,9 +109,7 @@ img {
     margin: 0 auto;
 }
 
-/* ============================================================
-   Buttons & Links
-   ============================================================ */
+/* Buttons */
 .btn {
     display: inline-flex;
     align-items: center;
@@ -146,14 +128,12 @@ img {
                 box-shadow var(--transition-normal);
 }
 
-/* Download CV Button & Primary Button */
 .btn-primary {
     background-color: var(--color-primary);
     color: #FFFFFF;
     box-shadow: 0 4px 14px rgba(24, 78, 75, 0.2);
 }
 
-/* Button Hover Effect: changes background to golden yellow and lifts */
 .btn-primary:hover {
     background-color: var(--color-accent);
     color: var(--color-primary);
@@ -162,7 +142,6 @@ img {
     box-shadow: 0 6px 18px rgba(229, 169, 60, 0.35);
 }
 
-/* Arrow inside button: moves slightly right on hover using transform */
 .btn-arrow {
     display: inline-block;
     transition: transform var(--transition-normal);
@@ -184,9 +163,7 @@ img {
     transform: translateY(-2px);
 }
 
-/* ============================================================
-   Navigation Bar
-   ============================================================ */
+/* Navigation */
 .header {
     position: sticky;
     top: 0;
@@ -198,7 +175,6 @@ img {
     padding: 16px 0;
 }
 
-/* Flexbox layout for the navigation container */
 .nav-container {
     max-width: 1140px;
     margin: 0 auto;
@@ -208,7 +184,6 @@ img {
     justify-content: space-between;
 }
 
-/* Logo */
 .logo {
     font-family: var(--font-heading);
     font-size: 1.5rem;
@@ -226,7 +201,6 @@ img {
     color: var(--color-accent);
 }
 
-/* Navigation Links */
 .nav-menu {
     display: flex;
 }
@@ -246,7 +220,6 @@ img {
     transition: color var(--transition-fast), transform var(--transition-fast);
 }
 
-/* Navbar Hover Effect using pseudo-element underline and color change */
 .nav-link::after {
     content: '';
     position: absolute;
@@ -273,16 +246,13 @@ img {
     color: var(--color-primary);
 }
 
-/* ============================================================
-   Hero Section
-   ============================================================ */
+/* Hero section */
 .hero-section {
     padding: 60px 0 80px 0;
     position: relative;
     overflow: hidden;
 }
 
-/* Hero Flexbox/Grid Layout: Two-column layout */
 .hero-container {
     display: flex;
     align-items: center;
@@ -290,13 +260,11 @@ img {
     gap: 48px;
 }
 
-/* Left Content Column */
 .hero-content {
     flex: 1;
     max-width: 540px;
 }
 
-/* Introduction Badge */
 .hero-intro-badge {
     display: inline-flex;
     align-items: center;
@@ -322,7 +290,6 @@ img {
     color: var(--color-primary);
 }
 
-/* Main Hero Heading */
 .hero-title {
     font-size: 3.5rem;
     font-weight: 800;
@@ -342,7 +309,6 @@ img {
     margin-bottom: 32px;
 }
 
-/* Hero Call to Action Buttons */
 .hero-buttons {
     display: flex;
     align-items: center;
@@ -351,7 +317,6 @@ img {
     flex-wrap: wrap;
 }
 
-/* Social Links under Hero */
 .hero-socials {
     display: flex;
     align-items: center;
@@ -392,9 +357,7 @@ img {
     box-shadow: var(--shadow-sm);
 }
 
-/* ============================================================
-   Profile Image & Hero Visual Area
-   ============================================================ */
+/* Profile and visual elements */
 .hero-visual {
     flex: 1;
     position: relative;
@@ -404,7 +367,6 @@ img {
     min-height: 440px;
 }
 
-/* Decorative Curving Dashed Line inspired by reference image */
 .decorative-curve {
     position: absolute;
     top: 10px;
@@ -415,7 +377,6 @@ img {
     z-index: 1;
 }
 
-/* Circular Profile Frame */
 .profile-frame {
     position: relative;
     width: 330px;
@@ -426,7 +387,6 @@ img {
     border: 6px solid #FFFFFF;
 }
 
-/* Golden circular offset backdrop inspired by the reference design */
 .profile-circle-backdrop {
     position: absolute;
     top: -10px;
@@ -439,10 +399,6 @@ img {
     animation: rotateSlow 25s linear infinite;
 }
 
-/* Profile Image:
-   - object-fit: cover ensures the photo fills the container naturally without stretching or distortion.
-   - object-position: 50% 18% focuses right on Pratik's face so it stays perfectly centered.
-*/
 .profile-image {
     width: 100%;
     height: 100%;
@@ -456,7 +412,6 @@ img {
     transform: scale(1.04);
 }
 
-/* Floating Badges around portrait */
 .floating-badge {
     position: absolute;
     background-color: #FFFFFF;
@@ -499,9 +454,7 @@ img {
     color: var(--color-text-muted);
 }
 
-/* ============================================================
-   About Section
-   ============================================================ */
+/* About section */
 .about-section {
     padding: 80px 0;
     background-color: #FFFFFF;
@@ -546,7 +499,6 @@ img {
     line-height: 1.6;
 }
 
-/* Highlighted Education in About */
 .highlight-item {
     margin-bottom: 20px;
 }
@@ -611,21 +563,17 @@ img {
     color: var(--color-text-muted);
 }
 
-/* ============================================================
-   Skills Section
-   ============================================================ */
+/* Skills section */
 .skills-section {
     padding: 80px 0;
 }
 
-/* CSS Grid for Responsive Skill Cards */
 .skills-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
     gap: 24px;
 }
 
-/* Skill Card */
 .skill-card {
     background-color: var(--color-bg-card);
     border: 1px solid var(--color-border);
@@ -638,7 +586,6 @@ img {
     position: relative;
 }
 
-/* Skill Card Hover Effect: lifts slightly and darkens border */
 .skill-card:hover {
     transform: translateY(-6px);
     box-shadow: var(--shadow-md);
@@ -663,7 +610,6 @@ img {
     margin-bottom: 18px;
 }
 
-/* Skill Tags inside card */
 .skill-tags {
     display: flex;
     flex-wrap: wrap;
@@ -686,16 +632,13 @@ img {
     border-color: rgba(229, 169, 60, 0.4);
 }
 
-/* Wide card spans 2 columns on larger screens */
 @media (min-width: 992px) {
     .skill-card-wide {
         grid-column: span 2;
     }
 }
 
-/* ============================================================
-   Education Section
-   ============================================================ */
+/* Education section */
 .education-section {
     padding: 80px 0;
     background-color: #FFFFFF;
@@ -763,9 +706,7 @@ img {
     line-height: 1.6;
 }
 
-/* ============================================================
-   Projects Section
-   ============================================================ */
+/* Project cards */
 .projects-section {
     padding: 80px 0;
 }
@@ -777,7 +718,6 @@ img {
     margin-top: 20px;
 }
 
-/* Individual Project Card */
 .project-card {
     background-color: var(--color-bg-card);
     border: 1px solid var(--color-border);
@@ -795,7 +735,6 @@ img {
     border-color: var(--color-primary-light);
 }
 
-/* Browser Mockup Chrome Preview */
 .project-preview {
     position: relative;
     background-color: #EDE8DE;
@@ -819,17 +758,9 @@ img {
     display: inline-block;
 }
 
-.dot-red {
-    background-color: #FF5F56;
-}
-
-.dot-yellow {
-    background-color: #FFBD2E;
-}
-
-.dot-green {
-    background-color: #27C93F;
-}
+.dot-red { background-color: #FF5F56; }
+.dot-yellow { background-color: #FFBD2E; }
+.dot-green { background-color: #27C93F; }
 
 .browser-filename {
     margin-left: 8px;
@@ -839,7 +770,6 @@ img {
     font-weight: 600;
 }
 
-/* Screenshot image container with link */
 .project-img-link {
     display: block;
     position: relative;
@@ -861,7 +791,6 @@ img {
     transform: scale(1.04);
 }
 
-/* Hover overlay */
 .project-overlay {
     position: absolute;
     inset: 0;
@@ -889,7 +818,6 @@ img {
     letter-spacing: 0.02em;
 }
 
-/* Card Body Content */
 .project-content {
     padding: 24px;
     display: flex;
@@ -961,9 +889,7 @@ img {
     padding: 10px 18px;
 }
 
-/* ============================================================
-   Contact Section
-   ============================================================ */
+/* Contact section */
 .contact-section {
     padding: 80px 0;
     background-color: #FFFFFF;
@@ -975,7 +901,6 @@ img {
     gap: 40px;
 }
 
-/* Contact Information Column */
 .contact-info {
     background-color: var(--color-bg);
     border: 1px solid var(--color-border);
@@ -1046,7 +971,7 @@ img {
     color: var(--color-accent);
 }
 
-/* Contact Form */
+/* Contact form */
 .contact-form-card {
     background-color: var(--color-bg);
     border: 1px solid var(--color-border);
@@ -1108,9 +1033,7 @@ img {
     margin-top: 8px;
 }
 
-/* ============================================================
-   Footer
-   ============================================================ */
+/* Footer */
 .footer {
     background-color: var(--color-primary);
     color: #FFFFFF;
@@ -1147,11 +1070,7 @@ img {
     color: var(--color-accent);
 }
 
-/* ============================================================
-   CSS Keyframes & Page Load Animations
-   ============================================================ */
-
-/* Fade in and slide up effect */
+/* Keyframe animations */
 @keyframes fadeInUp {
     from {
         opacity: 0;
@@ -1163,7 +1082,6 @@ img {
     }
 }
 
-/* Gentle floating animation for decorative badges */
 @keyframes floatBadge {
     0% {
         transform: translateY(0);
@@ -1173,7 +1091,6 @@ img {
     }
 }
 
-/* Slow rotation for the dashed ring around the profile */
 @keyframes rotateSlow {
     from {
         transform: rotate(0deg);
@@ -1183,7 +1100,6 @@ img {
     }
 }
 
-/* Hero Section Animations on Page Load */
 .hero-content {
     animation: fadeInUp 0.8s ease forwards;
 }
@@ -1193,7 +1109,6 @@ img {
     animation-fill-mode: both;
 }
 
-/* Reduced Motion preference for accessibility */
 @media (prefers-reduced-motion: reduce) {
     *, *::before, *::after {
         animation-duration: 0.01ms !important;
@@ -1203,11 +1118,7 @@ img {
     }
 }
 
-/* ============================================================
-   Responsive Layout & Media Queries
-   ============================================================ */
-
-/* Tablet Screens (under 992px) */
+/* Responsive design */
 @media (max-width: 992px) {
     .hero-container {
         flex-direction: column;
@@ -1241,13 +1152,12 @@ img {
     }
 
     .decorative-curve {
-        display: none; /* Hide decorative line on smaller screens for cleanliness */
+        display: none;
     }
 }
 
-/* Mobile Screens (under 768px) */
+/* Mobile */
 @media (max-width: 768px) {
-    /* Responsive Navigation: Wraps items neatly without JavaScript */
     .nav-container {
         flex-direction: column;
         gap: 14px;
@@ -1324,7 +1234,7 @@ img {
     }
 }
 
-/* Small Mobile Screens (under 480px) */
+/* Small mobile */
 @media (max-width: 480px) {
     .hero-title {
         font-size: 2rem;
@@ -1336,7 +1246,7 @@ img {
     }
 
     .floating-badge {
-        display: none; /* Hide floating badges on very narrow screens to prevent overlap */
+        display: none;
     }
 
     .hero-buttons {
@@ -1347,4 +1257,18 @@ img {
     .btn {
         width: 100%;
     }
+}
+
+/* Tailwind utility styles */
+.transition {
+    transition-property: all;
+    transition-duration: 200ms;
+}
+
+.duration-200 {
+    transition-duration: 200ms;
+}
+
+.hover\:-translate-y-1:hover {
+    transform: translateY(-2px);
 }
